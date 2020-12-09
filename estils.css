@@ -1,0 +1,149 @@
+/* HEADER */
+html{
+	background-color: grey;
+	font-family: 'Calibri';
+}
+
+header {
+	background-color: lightblue;  
+	margin-top: -1.4%;
+	width: 100%;
+}
+
+header h1 {
+	text-align: center;
+	width: 100%;
+}
+
+/* MENU*/
+
+nav  {
+	width: 100%;
+	position: absolute;
+	z-index:2;
+	margin-top: -1.4%;
+	align-content: center;
+}
+
+#menu ul {
+	display:flex;   /* Opcions en horitzontal */
+	list-style: none;   /* Sense vinyeta */
+	font-family: calibri;
+	margin: 0;
+	background-color: white;
+	border: 1px solid white;
+	text-align: center;
+	align-content: center;
+}
+
+#menu li:hover {
+	background-color: chartreuse;
+}
+#menu a {
+	display: flex;
+	width: 100%;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	padding-right: 5%;
+}
+
+#menu a:hover {
+	
+	color:#000;
+}	
+
+#menu ul li ul {
+	display: none;
+	opacity: 0.9;
+	text-align: center;
+	align-content: center;
+}
+
+#menu ul li a:hover + ul, #menu ul li ul:hover {
+	display: block;
+	margin-left:-60px;
+	width: 200px;
+}
+
+#menu li {
+	margin-left: 12%;
+	display: block;
+	align-content: center;
+}
+
+.foto {
+	margin-left: 25%;
+	margin-top: 5%;
+	z-index:1;
+}
+/*SECTION PAGINA PRINCIPAL*/
+
+section {
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	text-align: center;
+	background-color: darkslateblue;
+	padding-bottom: 3%;
+	border: solid black 1px;
+}
+
+section h1 {
+	padding-top: 3%;
+	justify-content: center;
+}
+
+.pitu {
+	display: flex;
+	text-align: left;
+	margin: 1% 1%;
+}
+
+.imgsection {
+	justify-content: center;
+	display: flex;
+	margin-top: 2%;
+}
+
+.imgsection a {
+	margin-left: 5%;
+}
+
+div img {
+	margin-left: 1%;
+}
+
+div p {
+	padding: 1%;
+	color: white;
+}
+
+/* FOOTER PAG PRINCIPAL */
+footer section {
+	padding-right: 3%;
+	padding-left: 3%;
+	margin: 3%;
+	width: 100%;
+}
+
+div {
+	max-resolution: bottom 5px;
+	margin-top: 1%;
+}
+footer {
+	display: flex;
+}
+
+footer img {
+	width: 50px;
+    height: 50px;
+    float: right;
+    padding-right: 2%;
+}
+
+
