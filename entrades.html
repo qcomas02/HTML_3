@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/entrades.css" />
+        <link rel="icon" icon” type="image/png" href="imatges/favicon.png"/>
+    </head>
+    <body>
+    <header>
+        <h1> NETFILM </h1>
+  
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="#">PEL·LICULES</a>
+                    <ul>
+                        <li>    
+                            <a href="estrenes.html">Destacades</a>
+                        </li>
+                        <li>
+                            <a href="#">Cartellera</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <strong> ENTRADES </strong></a> 
+                    <ul>
+                        <li>
+                            <a href="entrades.html">Entrades</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="iniciarsessio.html"> INICIAR SESSIÓ </a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+        <main class="disposicionentrada">
+        <section class="entradas">
+            <h4>Dades</h4>
+            <div>
+                <label for="firstName">Nom</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Introdueix nom" value="" required>
+            </div>
+            <div>
+                <label>Cognom</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Introdueix cognom" value="" required>
+            </div>
+            <div>
+                <label for="username">Nom de l'Usuari</label>
+                <input type="text" class="form-control" id="username" placeholder="Introdueix nom d'usuari" required>
+            </div>
+            <div>
+                <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="elteuemail@example.com">
+            </div>
+            <div>
+                <label for="address">Adreça</label>
+                <input type="text" class="form-control" id="address" placeholder="Introdueix la teva adreça" required>
+            </div>
+            <div>
+                <label for="address2">Adreça <span class="text-muted">(Opcional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Introdueix la teva adreça">
+            </div>
+            <div>
+                <label for="Pais">Comunitat autònoma</label>
+                <select class="desplegableentrada" id="Pais" required>
+                    <option>Andalusia</option>
+                    <option>Aragó</option>
+                    <option>Principat d'Astúries</option>
+                    <option>Illes Balears</option>
+                    <option>País Basc</option>
+                    <option>Canàries</option>
+                    <option>Cantàbria</option>
+                    <option>Castella - la Manxa</option>
+                    <option>Castella i Lleó</option>
+                    <option>Catalunya</option>
+                    <option>Extremadura</option>
+                    <option>Galícia</option>
+                    <option>Comunitat de Madrid</option>
+                    <option>Regió de Múrcia</option>
+                    <option>Navarra</option>
+                    <option>La Rioja</option>
+                    <option>País Valencià</option>
+                    <option>Ceuta</option>
+                    <option>Melilla</option>
+                </select>
+            </div>
+
+            <div>
+                <h4>Tipus de Targeta</h4>
+                <input id="credit" name="paymentMethod" type="radio" class="botonentrada" checked required>
+                <label for="credit">Targeta de Crèdit</label>
+                <input id="debit" name="paymentMethod" type="radio" class="botonentrada" required>
+                <label for="debit">Targeta de Dèbit</label>
+                <input id="paypal" name="paymentMethod" type="radio" class="botonentrada" required>
+                <label class="custom-control-label" for="paypal">PayPal</label>
+            </div>
+            <div>
+                <label>Nom del Titular de la Targeta</label>
+                <input type="text" id="cc-name" placeholder="Introdueix nom" required>
+
+                <label for="cc-number">Número de la Targeta</label>
+                <input type="tel" class="form-control" id="cc-number" placeholder="Introdueix número CC" required>
+
+                <label for="cc-expiration">Expiració</label>
+                <input type="week" placeholder="Expiració" required>
+
+                <label for="cc-cvv">CVV</label>
+                <input type="number" placeholder="CVV" required>
+
+            </div>
+
+            <button class="comprarboton" type="submit">Introduir dades</button>
+        </section>
+        <section class="comprar">
+            <div>
+                <h4>Entrada</h4>
+
+            </div>
+            <div>
+                <h4>Títol de la Pel·lícula</h6>
+                    <select class="desplegablecomprar" id="country" required>
+                        <option>Baby Driver</option>
+                        <option>Ludo</option>
+                        <option>Project X</option>
+                        <option>Interstellar</option>
+                        <option>El caballero oscuro</option>
+                        <option>El padrino: Parte II</option>
+                        <option>Cadena perpetua</option>
+                        <option>Forrest Gump</option>
+                    </select>
+            </div>
+            <span>5€</span>
+            <div>
+                <h4>Sessió</h4>
+                <select class="desplegablecomprar" id="country" required>
+                    <option>9:00</option>
+                    <option>11:00</option>
+                    <option>13:00</option>
+                    <option>16:00</option>
+                    <option>18:00</option>
+                    <option>20:00</option>
+                    <option>22:00</option>
+                    <option>24:00</option>
+                </select>
+                <h4>Tipus de Promoció(Si estàs registrat)</h4>
+                <input id="credit" name="paymentMethod" type="radio" class="botonentrada" checked required>
+                <label for="credit">Crispetes Petites 3€</label>
+                <input id="debit" name="paymentMethod" type="radio" class="botonentrada" required>
+                <label for="debit">Crispetes Grans 5€</label>
+                <input id="credit" name="paymentMethod" type="radio" class="botonentrada" checked required>
+                <label for="credit">Beguda Petita 2€</label>
+                <input id="credit" name="paymentMethod" type="radio" class="botonentrada" checked required>
+                <label for="credit">Beguda Gran 4€</label>
+                <input id="credit" name="paymentMethod" type="radio" class="botonentrada" checked required>
+                <label for="credit">Cap</label>
+            </div>
+            <button class="comprarboton" type="submit">Comprar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web creada per <strong>Quim Comas</strong></p>
+    </footer>
+
+</body>
+
+</html>
